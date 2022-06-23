@@ -17,7 +17,7 @@ body{
     padding: 0 0 4.5rem;
 }
 
-.header-h1{
+h1{
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
@@ -25,7 +25,7 @@ body{
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 5% 15%;
 }
 
 .navbar-brand{
@@ -33,9 +33,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 .header-img {
     transform: rotate(25deg);
     width: 60%;
+    margin-left: 10%;
   }
 
 
@@ -46,20 +48,23 @@ body{
 
 
 /* features section */
-
 .features-h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.features-p{
+p{
     color: #8f8f8f;
 }
 
 #features{
     
-    padding: 7% 15%;
+    padding: 7% 15% 0 15%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    bottom: 150px;
 }
 
 .feature-card{
@@ -85,7 +90,7 @@ body{
     color: #fff;
 }
 
-.testimonial-h2{
+h2{
     font-weight: 600;
     font-size: 3rem;
     line-height: 1.5;
@@ -116,3 +121,103 @@ body{
 
 }
 
+/* pricing Section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+/* cta section */
+
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 15% 7% 15%;
+}
+.cta-content{
+    
+    margin: auto;
+    text-align: center;
+}
+
+.cta-h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    
+    font-size: 3.5rem;
+    line-height: 1.5;
+    
+}
+
+/* footer section */
+
+#footer{
+    text-align: center;
+    padding: 7%;
+    background-color: #fff;
+
+}
+
+.foot-link{
+    color: black;
+    padding: 1% 0.75%;
+}
+
+
+
+
+
+
+/* media Queries */
+
+@media (max-width: 1270px) {
+    h1{
+        font-size: 3rem;
+    }
+    .header-img {
+        width: 50%;
+        margin-left: 10%;
+      }
+     
+}
+
+@media (max-width: 1200px) {
+    h1{
+        font-size: 2rem;
+    }
+    .header-img {
+        width: 45%;
+        margin-left: 10%;
+      }
+
+      #title{
+        margin-bottom: 5%;
+      }
+     
+}
+
+@media (max-width : 1030px) {
+    .header-img{
+         position: static;
+         transform: rotate(0);
+    }
+    #title{
+        text-align: center;
+        
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    .download-button{
+        
+        font-size: 1rem;
+    }
+    
+    
+}
